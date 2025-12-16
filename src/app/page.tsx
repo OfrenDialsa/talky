@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-linear-to-b from-sky-100 to-yellow-100">
-      <main className="flex w-full max-w-md flex-col items-center gap-10 rounded-3xl bg-white px-8 py-16 shadow-xl">
+    <div className="flex min-h-screen items-center justify-center bg-white">
+      <main className="flex w-full max-w-md flex-col items-center gap-10 rounded-3xl bg-linear-to-b from-white to-yellow-50 px-8 py-16 shadow-xl">
         <div className="flex flex-col items-center gap-4">
           <Image
             src="/talky.png"
@@ -26,7 +26,7 @@ export default function Home() {
         </p>
 
         <Link
-          href="/learn"
+          href="/lessons"
           className="flex h-16 w-full items-center justify-center rounded-full bg-yellow-500 text-2xl font-bold text-white shadow-md transition-transform hover:scale-105 active:scale-95"
         >
           Let’s Begin 🚀
