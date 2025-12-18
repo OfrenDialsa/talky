@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Baloo_2, Nunito } from "next/font/google";
 import "./globals.css";
-import SupabaseProvider from "@/components/supabase-provider";
+import Provider from "./provider";
 
 const baloo = Baloo_2({
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${baloo.variable} ${nunito.variable} antialiased`}>
-        <SupabaseProvider>{children}</SupabaseProvider>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
